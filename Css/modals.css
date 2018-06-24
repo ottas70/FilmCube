@@ -1,0 +1,111 @@
+/*********************************************************************
+ DIALOGS
+*********************************************************************/
+
+.dialog {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dialog-content {
+    background-color: white;
+    margin: 150px auto;
+    width: 400px;
+    padding: 20px 40px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.exit {
+    width: 15px;
+    height: auto;
+    float: right;
+    margin: -10px -20px 0 0;
+    cursor: pointer;
+}
+
+.dialog-header {
+    margin: 0;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #a2a2a2;
+    margin-bottom: 25px;
+    clear: both;
+}
+
+.horizontal-form {
+
+}
+
+.form-row {
+    margin-bottom: 15px;
+}
+
+.form-input {
+    width: 90%;
+    padding: 8px 5%;
+    outline: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+}
+
+
+.submit-btn {
+    width: 100%;
+    margin-top: 15px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #86C232;
+    padding: 10px 0;
+    color: white;
+    font-weight: 700;
+    font-size: 1.3em;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.error {
+    border-color: red;
+}
+
+input.error::-webkit-input-placeholder {
+    color: red;
+    font-style: italic;
+    font-weight: 100;
+}
+
+div.error-php {
+    color: red;
+    font-style: italic;
+    font-weight: 100;
+    text-align: center;
+}
+
+/*********************************************************************
+ MEDIA QUERIES
+*********************************************************************/
+
+@media screen and (max-width: 750px) {
+    .dialog-content {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .submit-btn {
+        font-size: 1em;
+    }
+}
